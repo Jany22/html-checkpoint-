@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        /* Ajoutez ici votre propre style CSS pour personnaliser votre page */
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section "À propos" -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <!-- Ajoutez ici des informations sur vous-même -->
+    </section>
+
+    <!-- Section "Travail" -->
+    <section id="work">
+        <!-- Expérience Professionnelle -->
+        <label for="experience">Expérience Professionnelle :</label>
+        <textarea id="experience" name="experience" rows="4" required></textarea>
+        
+
+    </section>
+
+    <!-- Section "CV" -->
+    <section id="resume">
+        <h2>Mon CV</h2>
+        <p>Joignez votre CV en utilisant le formulaire ci-dessous :</p>
+        <form action="/upload_cv" method="post" enctype="multipart/form-data">
+            <label for="cv">Sélectionnez votre CV :</label>
+             <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx">
+             <br>
+             <input type="submit" value="Envoyer">
+    </form>
+    </section>
+
+    <!-- Section "Contact" -->
+    <section id="contact">
+         <h2>Contactez-moi</h2>
+            <form action="/submit_contact_form" method="post">
+                <!-- Nom et Prénom -->
+                <label for="name">entrer votre nom et Prénom </label>
+                <input type="text" id="name" name="name" required>
+        
+                <!-- Adresse e-mail -->
+                <label for="email">entrer votre Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <!-- Âge -->
+                <label for="age">Âge :</label>
+                <input type="number" id="age" name="age" required>
+
+                <!-- Genre -->
+                <label for="gender">Genre :</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Homme</option>
+                    <option value="female">Femme</option>
+
+                <!-- Ville -->
+                <label for="city">Ville :</label>
+                <input type="text" id="city" name="city" required>
+
+    
+        </select>
+
+    
+        
+                <!-- Bouton d'envoi -->
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 Mon Portfolio</p>
+        <!-- Ajoutez ici des informations supplémentaires ou des liens sociaux -->
+    </footer>
+
+    <!-- Ajouter une vidéo/audio -->
+    <video controls>
+        <source src="/Interview Questions and Answers! (How to PASS a JOB INTERVIEW!).mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+
+    <!-- Ajouter de l'audio -->
+    <audio controls>
+        <source src="/Presentation Introduction Example.mp3" type="audio/mp3">
+        
+    </audio>
+
+</body>
+</html>
